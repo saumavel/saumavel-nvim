@@ -1,0 +1,5 @@
+require("saumavelSetup.remap")
+require("saumavelSetup.lazy")
+require("saumavelSetup.settings")
+require("saumavelSetup.remap_plugin")
+require("saumavelSetup.autocmds")
