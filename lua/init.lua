@@ -4,5 +4,4 @@ if vim.fn.getenv("VSCODE_PID") ~= vim.NIL then
     return
   end
   
-  require("saumavelSetup")
-  
+  require("saumavelSetup")  
