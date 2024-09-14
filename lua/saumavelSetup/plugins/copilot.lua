@@ -8,13 +8,12 @@ return {
         config = function()
             -- Custom keybindings
             vim.g.copilot_no_tab_map = true -- Disable default <Tab> mapping
-            vim.api.nvim_set_keymap("i", "<C-æ>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+            vim.api.nvim_set_keymap("i", "<C-l>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
             vim.api.nvim_set_keymap("i", "<C-k>", 'copilot#Previous()', { silent = true, expr = true })
-            vim.api.nvim_set_keymap("i", "<C-l>", 'copilot#Next()', { silent = true, expr = true })
-            vim.api.nvim_set_keymap("i", "<C-j>", 'copilot#Dismiss()', { silent = true, expr = true })
+            vim.api.nvim_set_keymap("i", "<C-j>", 'copilot#Next()', { silent = true, expr = true })
+            vim.api.nvim_set_keymap("i", "<C-h>", 'copilot#Dismiss()', { silent = true, expr = true })
         end,
     },
-
     -- Optional: Integration with nvim-cmp
     {
         "zbirenbaum/copilot-cmp",

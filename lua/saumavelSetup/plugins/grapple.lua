@@ -8,9 +8,10 @@ return {
     cmd = "Grapple",
     keys = {
         { "<leader>m", "<cmd>Grapple toggle<cr>",         desc = "Grapple toggle tag" },
-        { "<leader>j", "<cmd>Grapple select index=1<cr>", desc = "Select first tag" },
-        { "<leader>k", "<cmd>Grapple select index=2<cr>", desc = "Select second tag" },
-        { "<leader>l", "<cmd>Grapple select index=3<cr>", desc = "Select third tag" },
+        { "<leader>h", "<cmd>Grapple select index=1<cr>", desc = "Select first tag" },
+        { "<leader>j", "<cmd>Grapple select index=2<cr>", desc = "Select second tag" },
+        { "<leader>k", "<cmd>Grapple select index=3<cr>", desc = "Select third tag" },
+        { "<leader>l", "<cmd>Grapple select index=4<cr>", desc = "Select fourth tag" },
         { "<leader>M", "<cmd>Grapple toggle_tags<cr>",    desc = "Grapple open tags window" },
     },
     config = function ()
