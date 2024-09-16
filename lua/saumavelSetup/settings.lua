@@ -75,6 +75,7 @@ vim.diagnostic.config({ ---BUG: virkar ekki og ég skil ekki afhverju :(
 })
 
 vim.opt.list = false -- enable or disable listchars
+
 vim.opt.listchars = {
     eol = "↲",
     tab = "-->",
@@ -86,4 +87,4 @@ vim.opt.listchars = {
 }
 
 -- Tells me if there is the line is wrapped
--- vim.g.showbreak = '↪' --NOTE: virðist ekki virka
+vim.g.showbreak = '↪' --NOTE: virðist ekki virka

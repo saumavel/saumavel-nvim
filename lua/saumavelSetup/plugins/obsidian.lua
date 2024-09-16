@@ -11,7 +11,7 @@ return {
       workspaces = {
         {
           name = "obsidian",
-          path = "/Users/einarhrafnsson/Desktop/skolinn/",
+          path = "/Users/saumavel/Desktop/skolinn/",
         },
       },
       completion = {
