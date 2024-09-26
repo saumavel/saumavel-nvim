@@ -34,7 +34,7 @@ return {
                 concealcursor = "nvic",
             },
             -- Send deleted files to the trash instead of permanently deleting them (:help oil-trash)
-            delete_to_trash = false,
+            delete_to_trash = true,
             -- Skip the confirmation popup for simple operations (:help oil.skip_confirm_for_simple_edits)
             skip_confirm_for_simple_edits = false,
             -- Selecting a new/moved/renamed file or directory will prompt you to save changes first
@@ -63,6 +63,7 @@ return {
             -- Set to `false` to remove a keymap
             -- See :help oil-actions for a list of all available actions
             keymaps = {
+                
                 ["g?"] = "actions.show_help",
                 -- ["<CR>"] = "actions.select",
                 ["l"] = "actions.select",
@@ -80,6 +81,16 @@ return {
                 ["gx"] = "actions.open_external",
                 ["g."] = "actions.toggle_hidden",
                 ["g\\"] = "actions.toggle_trash",
+                ["<leader>ff"] = {
+                    function()
+                        require("telescope.builtin").find_files({
+                            cwd = require("oil").get_current_dir()
+                        })
+                    end,
+                    mode = "n",
+                    nowait = true,
+                    desc = "Find files in the current directory"
+                }
             },
             -- Configuration for the floating keymaps help window
             keymaps_help = {
